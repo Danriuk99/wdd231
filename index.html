@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="David Martinez">
+    <meta name="description" content="wdd231 Home page assigment David Martinez">
+    
+    <title>WDD231 Home Page David Martinez</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small-view.css">
+
+    <script src="scripts/getdate.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="images/profile.png" alt="Profile picture" width="120" height="120">
+            <h1><span>David Martinez</span>WDD 231</h1>
+        </div>
+        <button id="menu" aria-label="Toggle Menu">☰</button>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="chamber.html">Chamber Project</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+        <section>
+            <h2>About me</h2>
+            <div class="bio-content">
+                <p>My name is David Martinez Sanchez I was born in Monterrey Nuevo Leon, I am  improving my knowledge of software development skills, I wanted to learn about computers since I was 6 years old I was able to use my first computer. I have great dreams to creating Apps for time management to save time and fulfill all my dreams on time.  </p>
+            </div>  
+
+        </section>
+
+        <section>
+            <h2>Student Photo</h2>
+            <img src="images/profile.png" alt="profile picture" width="150" height="150">
+        </section>
+
+        <section class="certificates">
+            <h2>Web Certificate Courses</h2>
+            <div class="filter-buttons">
+                <button id="all">All</button>
+                <button id="wdd">WDD</button>
+                <button id="CSE">CSE</button>
+            </div>
+            <p id="totalCredits">Total Credits Required: 0</p>
+            <div id="courses"></div>
+
+
+
+            <footer>
+                <div class="social-media">
+                    <a href="https://github.com/Danriuk99?tab=repositories" target="_blank">GitHub
+                        <img src="images/github.webp" alt="github logo">
+                    </a>
+                    <a href="https://www.linkedin.com/feed/" target="_blank">Linkedin
+                        <img src="images/linkedin.webp" alt="linkedin logo">
+                    </a>
+                </div>
+                <p>&copy; <span id="currentyear"></span>David Martinez | Monterrey, Mexico</p>
+                <p id="lastModified"></p>
+
+
+            </footer>
+        </section>
+
+    </main>
+    
+</body>
+</html>

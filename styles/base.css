@@ -1,0 +1,223 @@
+:root {
+  --primary-color: #010a25;
+  --secondary-color: #2d3748;
+  --accent-color: #2b6cb0;
+  --completed-color: #d69e2e;
+  --bg-color: #f7fafc;
+  --card-bg: #ffffff;
+  --text-color: #1a202c;
+  --border-color: #cbd5e0;
+  --font-family: 'Roboto', system-ui, -apple-system, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+}
+
+header h1 span {
+  font-size: 1.1rem;
+}
+
+#menu {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1.75rem;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+}
+
+nav {
+  background-color: var(--secondary-color);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+nav a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: var(--accent-color);
+}
+
+main {
+  max-width: 1200px;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+main > h1 {
+  font-size: 1.75rem;
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 0.5rem;
+}
+
+section {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  padding: 1rem;
+}
+
+section h2 {
+  background-color: var(--secondary-color);
+  color: #ffffff;
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  margin: -1rem -1rem 1rem -1rem;
+}
+
+.bio-content p {
+  padding: 0.5rem 0;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 1rem 0;
+  flex-wrap: wrap;
+}
+
+.filter-buttons button {
+  flex: 1;
+  min-width: 80px;
+  max-width: 150px;
+  padding: 0.5rem 1rem;
+  background-color: var(--bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-buttons button:hover,
+.filter-buttons button.active {
+  background-color: var(--accent-color);
+  color: #ffffff;
+  border-color: var(--accent-color);
+}
+
+#totalCredits {
+  text-align: center;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  color: var(--primary-color);
+}
+
+#courses {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.course-card {
+  background-color: var(--bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 1rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.course-card.completed {
+  background-color: #feebc8;
+  border-color: var(--completed-color);
+  color: #744210;
+}
+
+footer {
+  background-color: var(--secondary-color);
+  color: #ffffff;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.social-media {
+  display: flex;
+  gap: 1.25rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.25rem;
+  transition: opacity 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.social-media img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.social-media a:hover {
+  opacity: 0.8;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
