@@ -1,0 +1,25 @@
+{
+    "familyName": "Martinez",
+    "moveDate": "2011-4-18",
+    "peopleInFamily": 12,
+    "bishopricVisit": false,
+    "individualNames": [
+        {
+            "name": "David ",
+            "gender": "male",
+            "birthdate": "1999-10-19"
+        },
+        {
+            "name": "Juan ",
+            "gender": "male",
+            "birthdate": "1982-10-26"
+
+        },
+        {
+            "name": "Linda",
+            "gender" :"female",
+            "birthdate": "1986-5-14"
+        }
+    ]
+    
+}

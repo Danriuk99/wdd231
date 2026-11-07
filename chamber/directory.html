@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Monterrey Chamber Directory - WDD231</title>
+    <meta name="description" content="Monterrey  Chamber of commerce Directory, you will find the official information related to our business members with high quality products.">
+    <meta name="author" content="David Martinez Sanchez">
+    <meta property="og:title" content="Monterrey  Chamber of commerce directory">
+    <meta property="og:description" content="Official information for  our business member from monterrey  chamber of commerce ">
+    <meta property="og:url" content="  ">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="ccm.ico">
+
+    <script src="scripts/directory.js" defer></script>
+
+
+    </head>
+<body>
+    <header>
+        <div>
+            <h1>Chamber of Commerce Monterrey</h1>
+        </div>
+        <button id="menu" aria-label="Open Menu"></button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Company Directory</h2>
+        <div class="menu-view">
+            <button id="grid">Grid</button>
+            <button id="list">List</button>
+        </div>
+        <div id="cards" class="grid"></div>
+    </main>
+    
+    <footer>
+        <p>@<span id="currentyear"></span>| David Martinez Sanchez| Monterrey, N.L</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    
+</body>
+</html>

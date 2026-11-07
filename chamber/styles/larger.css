@@ -1,0 +1,41 @@
+@media screen and (min-width: 768px) {
+  header {
+    padding: 1.5rem 3rem;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  nav ul li a {
+    padding: 0;
+  }
+
+  div.grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  div.list section {
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr 1fr;
+    gap: 1rem;
+  }
+
+  div.list section h3 {
+    display: block;
+  }
+
+  div.list section p.description {
+    display: block;
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,68 @@
+{
+    "members": [
+        {
+            "name":"Tubelite de México Suc.",
+            "address": "Privada A #2000 Buenos Aires, El Realito, 64800 Monterrey, N.L.",
+            "phone": "+52 81 8359 5096",
+            "image": "tubelite.webp",
+            "memberShipLevel": 3,
+            "website": "http://www.tubelite.com.mx/",
+            "description": "Authorized distributor of printing and cutting plotters (such as Mimaki), DTF, UV flatbed printers, heat presses, and laminators."
+        },
+        {
+            "name":"Optima Mayoreo Monterrey",
+            "address": "Av. Eugenio Garza Sada Sur 1361, Caracol, 64810 Monterrey, N.L.",
+            "phone":"+52 81 8190 3428",
+            "image": "optima.webp",
+            "memberShipLevel": 2,
+            "website":"http://www.dkps.com.mx/",
+            "description": "Everyday apparel basics (t-shirts, underwear, casual wear, sleepwear, and seasonal garments) focusing on comfort, utility, and affordability"
+
+        },
+        {
+            "name": "DKPS MONTERREY",
+            "address":"64820, Av. Chapultepec 1080, Buenos Aires, 64800 Monterrey, N.L.",
+            "phone": "+52 81 3620 9671",
+            "image": "dkps.webp",
+            "memberShipLevel": 1,
+            "description": "Corporate clothing lines including shirts, jackets, caps, and promotional t-shirts."
+        },
+        {
+            "name": "DTF Color Monterrey",
+            "address": "Av. Chapultepec 1035, Buenos Aires, 64800 Monterrey, N.L.",
+            "phone": "+52 81 2428 8736",
+            "image": "dtfcolor.webp",
+            "memberShipLevel": 3,
+            "website":"http://www.dtfcolormty.com/",
+            "description": "Precise color matching, sharp detail, and ready-to-apply transfer prints."
+        },
+        {
+            "name": "Print-UP",
+            "address": "Av, Jose Alvarado 900, Residencial la Española, 64820 Monterrey N.L",
+            "phone": "+51 81 4025 6842",
+            "image": "printup.webp",
+            "memberShipLevel": 3,
+            "website":"https://www.instagram.com/printup_mx/",
+            "description": "Soft, stretchable, and wash-resistant transfers for T-shirts, hoodies, caps, and workwear across cotton, polyester, and blends."
+        },
+        
+        {
+            "name":"Digraphsa",
+            "address": "Juan Zuazua 701 A, Centro, 64000 Monterrey, N.L.",
+            "phone": "+52 81 2517 5996",
+            "image":"diagraphsa.webp",
+            "memberShipLevel": 1,
+            "website": "https://www.facebook.com/DIGRAPHSA/",
+            "description": ": Standard sign vinyl, matte and gloss plotting films, frosted/etched glass vinyl, and specialty decorative colors."
+        },
+        {
+            "name": "IDGrafic",
+            "address": "Av. Cuauhtémoc 1308, Santa Margarita, 67140 Guadalupe, N.L.",
+            "phone": "+52 81 2086 0450",
+            "image":"IDgrafic.webp",
+            "memberShipLevel": 1,
+            "website": "https://idgrafic.mx/",
+            "description": "Customized everyday corporate gifts and giveaways, including branded mugs and promotional pens."
+        }
+    ]
+}
