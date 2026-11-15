@@ -1,84 +1,14 @@
-:root {
-  --primary-color: #0d3b66;
-  --secondary-color: #ff7700;
-  --accent-color: #ff6600;
-  --text-color: #333333;
-  --bg-color: #f9f9f9;
-  --card-bg: #ffffff;
-  --font-family: 'Arimo', sans-serif;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: var(--font-family);
-  color: var(--text-color);
-  background-color: var(--bg-color);
-  line-height: 1.6;
-}
-
-header {
-  background-color: var(--secondary-color);
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-}
-
-header h1 {
-  font-size: 1.2rem;
-  font-family: var(--font-family);
-  color: #fff;
-}
-
-#menu {
-  font-size: 1.5rem;
-  background: none;
-  border: none;
-  color: #fff;
-  cursor: pointer;
-}
-
-nav ul {
-  list-style: none;
-  display: none;
-}
-
-nav ul.open {
-  display: block;
-}
-
-nav ul li a {
-  display: block;
-  color: #fff;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-}
-
-nav ul li a:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-  color: #fff;
-}
-
 main {
   padding: 1.5rem;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-h2, h3 {
-  font-family: var(--font-family);
-}
-
 h2 {
   text-align: center;
   margin-bottom: 1rem;
   color: var(--primary-color);
+  font-family: var(--font-family);
 }
 
 .menu-view {
@@ -127,6 +57,7 @@ div.grid section img {
 div.grid section h3 {
   margin-bottom: 0.5rem;
   color: var(--primary-color);
+  font-family: var(--font-family);
 }
 
 div.grid section p {
@@ -159,6 +90,7 @@ div.list section h3 {
   font-size: 1rem;
   flex: 2;
   color: var(--primary-color);
+  font-family: var(--font-family);
 }
 
 div.list section p {
@@ -172,11 +104,14 @@ div.list section p.membership {
   display: none; 
 }
 
-footer {
-  background-color: var(--secondary-color);
-  color: #fff;
-  text-align: center;
-  padding: 1.5rem;
-  margin-top: 2rem;
-  font-size: 0.9rem;
+@media (min-width: 768px) {
+  div.grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  div.grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

@@ -1,59 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Monterrey Chamber Directory - WDD231</title>
-    <meta name="description" content="Monterrey  Chamber of commerce Directory, you will find the official information related to our business members with high quality products.">
-    <meta name="author" content="David Martinez Sanchez">
-    <meta property="og:title" content="Monterrey  Chamber of commerce directory">
-    <meta property="og:description" content="Official information for  our business member from monterrey  chamber of commerce ">
-    <meta property="og:url" content="https://danriuk99.github.io/wdd231/chamber/directory.html">
-    <meta property="og:image" content="https://danriuk99.github.io/wdd231/chamber/directory.html">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monterrey Chamber Directory - WDD231</title>
+  <meta name="description" content="Monterrey Chamber of Commerce Directory, you will find the official information related to our business members with high quality products.">
+  <meta name="author" content="David Martinez Sanchez">
+  <meta property="og:title" content="Monterrey Chamber of Commerce Directory">
+  <meta property="og:description" content="Official information for our business members from Monterrey Chamber of Commerce">
+  <meta property="og:url" content="https://danriuk99.github.io/wdd231/chamber/directory.html">
+  <meta property="og:image" content="https://danriuk99.github.io/wdd231/chamber/images/chamberlogo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/larger.css">
-    <link rel="icon" href="ccm.ico">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/directory.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <link rel="icon" href="ccm.ico">
 
-    <script src="scripts/directory.js" defer></script>
-
-
-    </head>
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/directory.js" defer></script>
+</head>
 <body>
-    <header>
-        <div>
-            <h1>Chamber of Commerce Monterrey</h1>
-        </div>
-        <button id="menu" aria-label="Open Menu"></button>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Directory</a></li>
-                <li><a href="join.html">Join</a></li>
-                <li><a href="discover.html">Discover</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <div class="header-content">
+      <div class="brand-box">
+        <img src="images/chamberlogo.webp" alt="Monterrey Chamber of Commerce Logo" width="60" height="60">
+        <span>Monterrey Chamber of Commerce</span>
+      </div>
+      <button id="menu-button" aria-label="Toggle Navigation Menu">&#9776;</button>
+    </div>
+    <nav id="nav-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html" class="active">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="discover.html">Discover</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-        <h1>Company Directory</h1>
-        <div class="menu-view">
-            <button id="grid">Grid</button>
-            <button id="list">List</button>
-        </div>
-        <div id="cards" class="grid"></div>
-    </main>
-    
-    <footer>
-        <p>@<span id="currentyear"></span>| David Martinez Sanchez| Monterrey, N.L</p>
-        <p id="lastModified"></p>
-    </footer>
+  <main>
+    <h1>Company Directory</h1>
+    <div class="menu-view">
+      <button id="grid">Grid</button>
+      <button id="list">List</button>
+    </div>
+    <div id="cards" class="grid"></div>
+  </main>
 
-    
+  <footer>
+    <div class="footer-info">
+      <p><strong>Monterrey Chamber of Commerce</strong></p>
+      <p>Av. Fundidora 501, Obrera, 64010 Monterrey, N.L.</p>
+      <p>contacto@camaramty.org.mx | (81) 8369-6969</p>
+    </div>
+    <div class="footer-social">
+      <a href="https://youtube.com" target="_blank" rel="noopener"><img src="images/youtube-icon.svg" alt="YouTube" width="32" height="32"></a>
+      <a href="https://x.com" target="_blank" rel="noopener"><img src="images/x-icon.svg" alt="X" width="32" height="32"></a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener"><img src="images/linkedin-icon.svg" alt="LinkedIn" width="32" height="32"></a>
+    </div>
+    <div class="footer-dev">
+      <p>WDD 231 Class Project</p>
+      <p>David Martinez Sanchez</p>
+      <p>&copy;<span id="currentyear"></span> Monterrey Chamber of Commerce</p>
+      <p id="lastModified"></p>
+    </div>
+  </footer>
 </body>
 </html>
