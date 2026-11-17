@@ -18,6 +18,7 @@ async function apiFetch() {
     }
   } catch (error) {
     console.log(error);
+    document.getElementById('weather-icon').setAttribute('src', iconoUrl);
   }
 }
 
