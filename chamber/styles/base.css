@@ -119,7 +119,7 @@ footer p {
   }
 
   nav ul {
-    display: flex !important;
+    display: flex ;
     flex-direction: row;
     gap: 10px;
   }
