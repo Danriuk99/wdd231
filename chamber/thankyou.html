@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You | Monterrey Chamber of Commerce</title>
+  <meta name="description" content="Confirmation page for your membership application to the Monterrey Chamber of Commerce.">
+  <meta name="author" content="David Martinez Sanchez">
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <link rel="stylesheet" href="styles/join.css">
+  <script type="module" src="scripts/thankyou.js"></script>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="brand-link">
+        <img src="images/chamberlogo.webp" alt="Monterrey Chamber of Commerce Logo" width="44" height="44">
+        <span>Monterrey Chamber of Commerce</span>
+      </a>
+      <button id="menu-button" class="menu-button" aria-label="Toggle Navigation" aria-expanded="false">&#9776;</button>
+      <nav id="nav-menu" class="nav-menu" aria-label="Main Navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html" class="active">Join</a></li>
+          <li><a href="discover.html">Discover</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="join-main">
+    <h1>Thank You for Your Application</h1>
+    <p>We appreciate your interest in joining the Monterrey Chamber of Commerce. Here are the submitted application details:</p>
+
+    <section class="summary-box" aria-label="Submitted Application Details">
+      <dl>
+        <div>
+          <dt>First Name</dt>
+          <dd id="display-firstName"></dd>
+        </div>
+        <div>
+          <dt>Last Name</dt>
+          <dd id="display-lastName"></dd>
+        </div>
+        <div>
+          <dt>Email Address</dt>
+          <dd id="display-email"></dd>
+        </div>
+        <div>
+          <dt>Mobile Phone Number</dt>
+          <dd id="display-phone"></dd>
+        </div>
+        <div>
+          <dt>Business / Organization Name</dt>
+          <dd id="display-organization"></dd>
+        </div>
+        <div>
+          <dt>Submitted Date &amp; Time</dt>
+          <dd id="display-timestamp"></dd>
+        </div>
+      </dl>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-info">
+      <p><strong>Monterrey Chamber of Commerce</strong></p>
+      <p>Av. Fundidora 501, Obrera, 64010 Monterrey, N.L.</p>
+      <p>contacto@camaramty.org.mx | (81) 8369-6969</p>
+    </div>
+    <div class="footer-social">
+      <a href="https://youtube.com" target="_blank" rel="noopener"><img src="images/youtube.webp" alt="YouTube" width="32" height="32"></a>
+      <a href="https://x.com" target="_blank" rel="noopener"><img src="images/xsocial-logo.webp" alt="X" width="32" height="32"></a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener"><img src="images/linkedin.webp" alt="LinkedIn" width="32" height="32"></a>
+    </div>
+    <div class="footer-dev">
+      <p>WDD 231 Class Project</p>
+      <p>David Martinez Sanchez</p>
+      <p>&copy;<span id="currentyear"></span> Monterrey Chamber of Commerce</p>
+      <p id="lastModified"></p>
+    </div>
+  </footer>
+</body>
+</html>

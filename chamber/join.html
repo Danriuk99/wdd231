@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join | Monterrey Chamber of Commerce</title>
+  <meta name="description" content="Apply for membership at the Monterrey Chamber of Commerce across Non-Profit, Bronze, Silver, and Gold tiers.">
+  <meta name="author" content="David Martinez Sanchez">
+  <meta property="og:title" content="Join | Monterrey Chamber of Commerce">
+  <meta property="og:description" content="Become a member of the Monterrey Chamber of Commerce and explore tier benefits.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://danriuk99.github.io/wdd231/chamber/images/hero.webp">
+  <meta property="og:url" content="https://danriuk99.github.io/wdd231/chamber/join.html">
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <link rel="stylesheet" href="styles/join.css">
+  <script type="module" src="scripts/join.js"></script>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="brand-link">
+        <img src="images/chamberlogo.webp" alt="Monterrey Chamber of Commerce Logo" width="44" height="44">
+        <span>Monterrey Chamber of Commerce</span>
+      </a>
+      <button id="menu-button" class="menu-button" aria-label="Toggle Navigation" aria-expanded="false">&#9776;</button>
+      <nav id="nav-menu" class="nav-menu" aria-label="Main Navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html" class="active">Join</a></li>
+          <li><a href="discover.html">Discover</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="join-main">
+    <h1>Chamber Membership Application</h1>
+
+    <div class="join-grid">
+      <section class="form-panel">
+        <h2>Membership Form</h2>
+        <form method="get" action="thankyou.html" class="membership-form">
+          <label>
+            First Name *
+            <input type="text" name="firstName" title="Applicant First Name" autocomplete="given-name" required>
+          </label>
+
+          <label>
+            Last Name *
+            <input type="text" name="lastName" title="Applicant Last Name" autocomplete="family-name" required>
+          </label>
+
+          <label>
+            Organizational Title
+            <input type="text" name="orgTitle" title="Organizational Title (minimum 7 characters: letters, spaces, or hyphens)" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}">
+          </label>
+
+          <label>
+            Email Address *
+            <input type="email" name="email" title="Email Address" autocomplete="email" placeholder="member@monterreybiz.com" required>
+          </label>
+
+          <label>
+            Mobile Phone Number *
+            <input type="tel" name="phone" title="Mobile Phone Number" autocomplete="tel" required>
+          </label>
+
+          <label>
+            Business / Organization Name *
+            <input type="text" name="organization" title="Business or Organization Name" autocomplete="organization" required>
+          </label>
+
+          <fieldset class="tier-fieldset">
+            <legend>Membership Level *</legend>
+            <label class="choice-label">
+              <input type="radio" name="membership" value="np" required>
+              NP Membership (Non-Profit — No Fee)
+            </label>
+            <label class="choice-label">
+              <input type="radio" name="membership" value="bronze">
+              Bronze Membership
+            </label>
+            <label class="choice-label">
+              <input type="radio" name="membership" value="silver">
+              Silver Membership
+            </label>
+            <label class="choice-label">
+              <input type="radio" name="membership" value="gold">
+              Gold Membership
+            </label>
+          </fieldset>
+
+          <label>
+            Business / Organization Description
+            <textarea name="description" title="Business or Organization Description" rows="4"></textarea>
+          </label>
+
+          <input type="hidden" name="timestamp" id="timestamp">
+
+          <button type="submit" class="submit-button">Submit Application</button>
+        </form>
+      </section>
+
+      <section class="tiers-panel" aria-label="Membership Levels">
+        <h2>Membership Tiers</h2>
+        <div class="tier-cards">
+          <article class="tier-card tier-np">
+            <h3>NP Membership</h3>
+            <p class="tier-fee">Non-Profit • Free</p>
+            <button type="button" class="tier-btn" data-dialog="dialog-np">Membership Benefits</button>
+          </article>
+
+          <article class="tier-card tier-bronze">
+            <h3>Bronze Membership</h3>
+            <p class="tier-fee">$150 / year</p>
+            <button type="button" class="tier-btn" data-dialog="dialog-bronze">Membership Benefits</button>
+          </article>
+
+          <article class="tier-card tier-silver">
+            <h3>Silver Membership</h3>
+            <p class="tier-fee">$350 / year</p>
+            <button type="button" class="tier-btn" data-dialog="dialog-silver">Membership Benefits</button>
+          </article>
+
+          <article class="tier-card tier-gold">
+            <h3>Gold Membership</h3>
+            <p class="tier-fee">$600 / year</p>
+            <button type="button" class="tier-btn" data-dialog="dialog-gold">Membership Benefits</button>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <dialog id="dialog-np" class="tier-dialog">
+      <div class="dialog-inner">
+        <button type="button" class="dialog-close" aria-label="Close Dialog">&times;</button>
+        <h3>NP Membership Benefits</h3>
+        <p>Designed for non-profit organizations in Monterrey with no membership fee:</p>
+        <ul>
+          <li>Listing in the Chamber member directory</li>
+          <li>Access to community networking mixers</li>
+          <li>Invitations to public policy and civic workshops</li>
+        </ul>
+      </div>
+    </dialog>
+
+    <dialog id="dialog-bronze" class="tier-dialog">
+      <div class="dialog-inner">
+        <button type="button" class="dialog-close" aria-label="Close Dialog">&times;</button>
+        <h3>Bronze Membership Benefits</h3>
+        <p>Essential business visibility and networking for growing companies:</p>
+        <ul>
+          <li>All NP Membership benefits included</li>
+          <li>Standard directory profile with business logo</li>
+          <li>15% discount on Chamber networking events and seminars</li>
+        </ul>
+      </div>
+    </dialog>
+
+    <dialog id="dialog-silver" class="tier-dialog">
+      <div class="dialog-inner">
+        <button type="button" class="dialog-close" aria-label="Close Dialog">&times;</button>
+        <h3>Silver Membership Benefits</h3>
+        <p>Expanded promotion and training opportunities for established businesses:</p>
+        <ul>
+          <li>All Bronze Membership benefits included</li>
+          <li>Eligibility for Home page spotlight features</li>
+          <li>25% discount on workshops, training sessions, and trade events</li>
+        </ul>
+      </div>
+    </dialog>
+
+    <dialog id="dialog-gold" class="tier-dialog">
+      <div class="dialog-inner">
+        <button type="button" class="dialog-close" aria-label="Close Dialog">&times;</button>
+        <h3>Gold Membership Benefits</h3>
+        <p>Maximum visibility, priority access, and executive leadership perks:</p>
+        <ul>
+          <li>All Silver Membership benefits included</li>
+          <li>Priority spotlight placement and featured promotions</li>
+          <li>VIP passes to annual Chamber summits and 40% event discount</li>
+        </ul>
+      </div>
+    </dialog>
+  </main>
+
+  <footer>
+    <div class="footer-info">
+      <p><strong>Monterrey Chamber of Commerce</strong></p>
+      <p>Av. Fundidora 501, Obrera, 64010 Monterrey, N.L.</p>
+      <p>contacto@camaramty.org.mx | (81) 8369-6969</p>
+    </div>
+    <div class="footer-social">
+      <a href="https://youtube.com" target="_blank" rel="noopener"><img src="images/youtube.webp" alt="YouTube" width="32" height="32"></a>
+      <a href="https://x.com" target="_blank" rel="noopener"><img src="images/xsocial-logo.webp" alt="X" width="32" height="32"></a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener"><img src="images/linkedin.webp" alt="LinkedIn" width="32" height="32"></a>
+    </div>
+    <div class="footer-dev">
+      <p>WDD 231 Class Project</p>
+      <p>David Martinez Sanchez</p>
+      <p>&copy;<span id="currentyear"></span> Monterrey Chamber of Commerce</p>
+      <p id="lastModified"></p>
+    </div>
+  </footer>
+</body>
+</html>
